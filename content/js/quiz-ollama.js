@@ -1,11 +1,11 @@
 function quizOllama() {
   let element;
 
-  if (document.querySelector(".css-140m8il") !== null) {
-      element = document.querySelectorAll(".css-140m8il p span span");
-  } else {
-      element = document.querySelectorAll(".rc-FormPartsQuestion p span span");
-  }
+  if (document.querySelector(".css-17s9u7d") !== null) {
+    element = document.querySelectorAll(".css-17s9u7d p span span");
+} else {
+    element = document.querySelectorAll(".rc-FormPartsQuestion p span span");
+}
 
   let text = "";
   for (var i = 0; element[i]; i++) {
