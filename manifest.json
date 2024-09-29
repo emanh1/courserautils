@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "CourseraUtils",
+  "version": "1.0",
+  "description": "a firefox extension for coursera utilites",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "courserautils@courserautils"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "icons": {
+    "16": "icon/icon16.png",
+    "32": "icon/icon32.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+  "action": {
+    "default_popup": "./popup/index.html"
+  },
+  "web_accessible_resources": [
+		{
+			"resources": [
+				"./popup/index.html",
+				"./popup/bootstrap.bundle.min.js",
+				"./popup/bootstrap.min.css",
+        "./content/js/autogradepeer.js",
+        "./content/js/quiz-ollama.js",
+        "./content/js/quiz-cloud.js"
+			],
+			"matches": [
+				"*://www.coursera.org/*"
+			]
+		}
+  ]
+}
