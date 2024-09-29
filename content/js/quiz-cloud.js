@@ -2,7 +2,7 @@ function quizCloud() {
     let element;
   
     if (document.querySelector(".css-17s9u7d") !== null) {
-        element = document.querySelectorAll(".css-17s9du7 p span span");
+        element = document.querySelectorAll(".css-17s9u7d p span span");
     } else {
         element = document.querySelectorAll(".rc-FormPartsQuestion p span span");
     }
